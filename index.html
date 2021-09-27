@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+    <!-- CSS & BootStrap Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="font-family: 'Yaldevi', sans-serif;">
+    <!-- Header Section -->
+    <header class="my-3">
+        <h1 class="fw-bold text-danger text-center">The Book Archive <sup class="fw-light"
+                style="font-family: 'Dancing Script', cursive;">your
+                dream come true</sup></h1>
+    </header>
+    <main>
+        <!-- Search Your Food -->
+        <section>
+            <div class="input-group mb-3 w-50 mx-auto mt-5">
+                <input id="search-field" type="text" class="form-control" placeholder="Search your book..."
+                    aria-label="Search your book..." aria-describedby="btn-search">
+                <button onclick="searchBook()" class="btn btn-outline-danger" type="button"
+                    id="btn-search">Search</button>
+            </div>
+        </section>
+        <!-- Show message section -->
+        <section class="container my-5">
+            <div id="show-msg"></div>
+            <!-- result section -->
+            <div id="search-results" class="row row-cols-1 row-cols-md-3 g-4"></div>
+        </section>
+        <!-- Loading section -->
+        <section class="d-flex justify-content-center">
+            <div id="loading" class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- JS Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
